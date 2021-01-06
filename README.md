@@ -9,15 +9,10 @@ repository, you can read my blog [here]().
 pip install -r requirements.txt
 ```
 
-### Basic VAE
+### Basic VAE setup
 Borrowed as it is from [pytorch repo](https://github.com/pytorch/examples/tree/master/vae).
 It is implementation of the paper [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) by Kingma and Welling.
-It uses ReLUs and the adam optimizer, instead of sigmoids and adagrad (as in the original paper).
-These changes make the network converge much faster.
 
-As in the example provided in official repo, we'll use a 2 layer fully connected VAE,
-with hidden dimensions of sizes 400 and 20 respectively. This means encoder is learning
-a latent representation of MNIST digits in form of 20 dimensional multivariate gaussian.
 
 **Usage**
 ```
